@@ -9,6 +9,9 @@ def decoder(data):
     pass
 
 def main():
+    encode = 0
+    decode = 0
+
     while True:
         print("Menu")
         print("-------------")
@@ -27,5 +30,5 @@ def main():
             break
 
 if __name__ == "__main__":
-
+    main()
 
