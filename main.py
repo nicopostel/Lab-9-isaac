@@ -8,7 +8,7 @@ def encoder(data):
 def decoder(data):
     pass
 
-def main()
+def main():
     while True:
         print("Menu")
         print("-------------")
