@@ -1,7 +1,16 @@
 #isaac philipose
 
 def encoder(data):
-    pass
+    newstrdata = ""
+    for i in range(len(data)):
+        convert = str(3+int(data[i]))
+        if len(convert) > 1:
+            convert = convert[1:]
+        newstrdata+= convert
+
+    return newstrdata
+
+
 
 
 
@@ -21,8 +30,9 @@ def main():
 
         choice = int(input("Please enter an option: "))
         if choice == 1:
-            password = int(input("Please enter your password to encode: "))
+            password = input("Please enter your password to encode: ")
             encode = encoder(password)
+            print("Your password has been encoded and stored!")
         if choice == 2:
             decode = decoder(encode)
             print(f"The encoded password is {encode}, and the original password is {decode}")
