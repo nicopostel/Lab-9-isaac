@@ -15,7 +15,13 @@ def encoder(data):
 
 
 def decoder(data):
-    pass
+    oldstrdata = ""
+    for i in data:
+        old_data = int(i) - 3
+        if old_data < 0:
+            old_data += 10
+        old_data += str(old_digit)
+    return old_data
 
 def main():
     encode = 0
